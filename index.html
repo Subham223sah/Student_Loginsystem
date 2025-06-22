@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Student Login</h2>
+    <form action="login.php" method="POST">
+      <input type="text" name="student_code" placeholder="Student Code" required />
+
+      <div class="password-wrapper">
+        <input type="password" name="password" placeholder="Password" id="login-pass" required />
+        <span class="toggle-eye" onclick="togglePassword('login-pass', this)">👁️</span>
+      </div>
+
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
